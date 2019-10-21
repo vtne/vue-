@@ -1,0 +1,19 @@
+/* 用于element-ui中table表格样式修改 */
+.noDataBg {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url('../../assets/img/noData.png') no-repeat center;
+}
+.noDetail {
+  width: 240px;
+  height: 240px;
+  background: url('../../assets/img/icon_noDetail.png') no-repeat center;
+  margin: 0 auto;
+}
+.noLogin {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  background: url('../../assets/img/icon_noLogin.png') no-repeat center;
+}

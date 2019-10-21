@@ -1,0 +1,111 @@
+/* .grid_list{
+    height: 100%;
+    width: 100%;
+    background: #f6f8fc;
+  } */
+  .list{
+    height: 100%;
+    padding: 0 20px;
+  }
+  .list .el-table th{
+    color: #333;
+    height: 70px;
+  }
+  .list .el-table__body{
+    border-collapse:collapse;
+  }
+  .list .el-table tr{
+    border-bottom: 10px solid #fff;
+    background: #f6f8fc;
+    height: 70px;
+    /* 划入颜色：e0e9f7 */
+  }
+  /* .grid_list .el-table tr:hover,.grid_list .el-table tr:visited{
+     background: #e0e9f7;
+  } */
+  .list .el-table--enable-row-hover .el-table__body tr:hover>td{
+  background-color: #e0e9f7;
+  } 
+  /*.list .el-table td{
+  	height: 60px;
+  }*/
+  .list .el-table td,
+  .list .el-table th{
+    text-align: center;
+  }
+  .list .el-table .el-table__body tr>td:nth-child(1) .cell{
+    padding-right: 0;
+  }
+  .list .el-table .el-table__body td .cell{
+    /* height: 40px; */
+        display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      word-break: break-all;
+      overflow: hidden;
+  }
+  /* 滑动条 */
+  .list .el-table .el-table__body-wrapper{
+    overflow-y: auto;
+    overflow-x: inherit;
+  }
+   .el-table__body-wrapper::-webkit-scrollbar-track,
+   .el-table__body-wrapper::-webkit-scrollba {
+    box-shadow: inset 0 0 6px rgba(75,142,216,0);
+    -webkit-box-shadow: inset 0 0 6px rgba(75,142,216,0);
+    background: rgba(75,142,216,0);
+  }
+  /* 定义滑块 内阴影+圆角 */
+  .el-table__body-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    box-shadow: inset 0 0 6px rgba(75,142,216,1);
+    -webkit-box-shadow: inset 0 0 6px rgba(75,142,216,1);
+    background-color:rgba(75,142,216,1);
+  }
+   .el-table__body-wrapper::-webkit-scrollbar-thumb:hover {
+    border-radius: 6px;
+    box-shadow: inset 0 0 6px rgba(75,142,216,1);
+    -webkit-box-shadow: inset 0 0 6px rgba(75,142,216,1);
+    background-color:rgba(75,142,216,1);
+  }
+  /* 滚动条的宽度 */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 0x;
+  }
+  /* 滚动条的滑块 */
+  ::-webkit-scrollbar-thumb {
+    background-color: #a1a3a9;
+    border-radius: 3px;
+  }
+  /* 图标 */
+  .el-icon-read{
+    content: url('../img/eventManage/read.png');
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+  }
+  .el-icon-xubao{
+    content: url('../img/eventManage/xubao.png');
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  .pages{
+    height: 50px;
+    padding-top: 8px;
+    box-sizing: border-box;
+  }
+  .pages .el-pagination .el-pager .number, 
+  .pages .el-pagination button{
+    width: auto;
+    height: 26px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    margin: 0 5px;
+  }
+  .pages .el-pagination .el-pager li.active{
+    background: #1e88f5;
+    color: #fff;
+  }
